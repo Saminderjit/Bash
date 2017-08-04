@@ -11,3 +11,8 @@ $? - The exit status of the last command executed.|
 $$ - The process ID of the current shell. For shell scripts, this is the process ID under which they are executing.|
 $! - The process number of the last background command.|
 
+
+
+
+### TIPS
+use "${var}" evrywhere instead of for loops; otehrwise for enry in ${entry}; don't work well

@@ -1,0 +1,15 @@
+set tabstop=4
+set softtabstop=4
+set softtabstop=4
+set expandtab
+set nocompatible
+"Pathogen load
+filetype off
+
+call pathogen#infect()
+call pathogen#helptags()
+let g:pymode_lint_options_pyflakes = { 'max-line-length': 120 }
+let g:pymode_lint_checkers = ['pyflakes']
+filetype plugin indent on
+syntax on
+

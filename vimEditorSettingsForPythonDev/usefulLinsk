@@ -1,0 +1,11 @@
+Integrate python-mode into vim and run pep8; pyflakes all that stuff using https://github.com/python-mode/python-mode#using-pathogen-recommended
+
+:PymodeLint
+:PymodeLintAuto
+
+txt documentation: https://github.com/python-mode/python-mode/blob/develop/doc/pymode.txt
+
+
+
+
+

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/sandvine/singleTest/overlappingPorts'
+let g:netrw_dirhist_2='/home/sandvine/singleTest/nonoverlappingPorts'
+let g:netrw_dirhist_3='/home/sandvine/singleTest/fake'
+let g:netrw_dirhist_4='/home/sandvine/.vim/bundle/vim-flake8/ftplugin'

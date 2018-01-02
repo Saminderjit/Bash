@@ -85,8 +85,8 @@ hi def link yangLengthArg Conditional
 
 let b:current_syntax = "yang"
 
-set softtabstop=4
-set softtabstop=4
+set softtabstop=2
+set softtabstop=2
 set expandtab
 set nocompatible
 

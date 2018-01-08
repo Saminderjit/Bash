@@ -1,5 +1,4 @@
 
-verwrite leader key
 let mapleader = ","
  
 set expandtab  """ tab uses space instead of tab
@@ -21,7 +20,6 @@ filetype plugin on
  
 execute pathogen#infect()
  
-colorscheme monokai
  
 """ nerdtree config
 """ ctrl + n opens up nerdtree

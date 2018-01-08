@@ -32,6 +32,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
  
  
 """ go-vim config
+let g:go_version_warning = 0
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
@@ -64,6 +65,3 @@ let g:gitgutter_signs = 1
 autocmd VimEnter * highlight ExtraWhitespace ctermbg=cyan
  
 """ incrsearch config
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)

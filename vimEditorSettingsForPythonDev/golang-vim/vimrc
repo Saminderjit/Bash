@@ -1,0 +1,71 @@
+
+verwrite leader key
+let mapleader = ","
+ 
+set expandtab  """ tab uses space instead of tab
+set tabstop=4  """ use 4 spaces when hitting tab
+set softtabstop=4
+set shiftwidth=4
+set ls=2   """ display filename at bottom
+set number """ display line number
+set cursorline """ highlight current line
+ 
+syntax on """ highlights code if source language can be inferred (else uses some default highlighting, e.g., for strings in double quotes)
+ 
+ 
+set encoding=utf-8
+set t_Co=256
+ 
+ 
+filetype plugin on
+ 
+execute pathogen#infect()
+ 
+colorscheme monokai
+ 
+""" nerdtree config
+""" ctrl + n opens up nerdtree
+map <C-n> :NERDTreeToggle<CR>
+""" close vim when only nerdtree panel left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+""" change nerdtree arrow
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+ 
+ 
+""" go-vim config
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_array_whitespace_error = 1
+let g:go_highlight_chan_whitespace_error = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_space_tab_error = 1
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_highlight_format_strings = 1
+let g:go_auto_type_info = 1
+let g:go_auto_sameids = 1
+let g:go_fmt_autosave = 0
+let g:go_list_height = 10
+let g:go_def_mode = 'godef'
+autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+  
+ 
+""" vim-airline config
+let g:airline_powerline_fonts = 1
+let g:airline_theme='molokai'
+ 
+""" vim-gitgutter config
+let g:gitgutter_enabled = 1
+let g:gitgutter_signs = 1
+ 
+""" vim-better-whitespace config
+autocmd VimEnter * highlight ExtraWhitespace ctermbg=cyan
+ 
+""" incrsearch config
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)

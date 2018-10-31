@@ -1,0 +1,3 @@
+services=$(service --status-all | grep salt | awk '{ print $4 }')  #will print col 4 in grep and save in some variable
+
+for i in $services;do service $i status; done    # will check each service status 

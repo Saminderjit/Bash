@@ -1,0 +1,11 @@
+sudo update-rc.d <service> defaults  # will add service to startup system
+
+This should add the service to the automatic startup system. But if you get:
+
+System start/stop links for /etc/init.d/<service> already exist.
+Do the command
+
+sudo update-rc.d <service> enable
+
+man update-rc.d
+
